@@ -13,8 +13,9 @@ W_token = os.getenv('WIFI')
 sta.connAP('TT-Maker', 'W_token')
 
 L_token = os.getenv('VARIABLE_L_NAME')
-URL1 = 'https://api.thingspeak.com/update?api_key=UZ031SZ1E2AFRKW8&field1='
-URL2 = 'https://api.thingspeak.com/update?api_key=UZ031SZ1E2AFRKW8&field2='
+K_token= os.getenv('thingkey')
+URL1 = 'https://api.thingspeak.com/update?api_key=K_toke&field1='
+URL2 = 'https://api.thingspeak.com/update?api_key=K_toke&field2='
 URLdanger='https://maker.ifttt.com/trigger/danger/with/key/'+L_token
 URLnormal='https://maker.ifttt.com/trigger/normal/with/key/'+L_token
 URLnotice='https://maker.ifttt.com/trigger/notice/with/key/'+L_token
